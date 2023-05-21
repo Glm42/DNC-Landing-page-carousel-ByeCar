@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNC Motos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./Assets/logodnc.png" alt="dnc-logo"/>
+        <h1>ByeCar</h1>
+    </header>
+    <section>
+        <!-- left content -->
+        <div class="leftContent">
+            <h2>Ter <b>uma moto</b> por assinatura nunca foi tão fácil</h2>
+            <img src="./Assets/left-img.png" alt="bikerExample">
+        </div>
+
+        <!-- right content -->
+        <div class="rightContent">
+            <h2>Conheça nossas <span>motos</span>!</h2>
+            <!-- Carrossel -->
+            <div class="carrossel">
+                <button onclick="show(-1)">
+                    <img src="./Assets/setaesquerda.png" alt="setaEsquerda">
+                </button>
+                <ul class="carrosselCards">
+                    <li>
+                        <h2>Scooter Elétrica Voltz EV1</h2>
+                        <img src="./Assets/moto1.png" alt="">
+                        <div class="cardLabel">
+                            <h1>A partir de</h1>
+                            <span>R$619,90</span>
+                            <h3>Plano de 30 meses</h3>
+                        </div>
+                    </li>
+                    <li>
+                        <h2>Honda CB 500X</h2>
+                        <img src="./Assets/moto2.png" alt="">
+                        <div class="cardLabel">
+                            <h1>A partir de</h1>
+                            <span>R$890,90</span>
+                            <h3>Plano de 12 meses</h3>
+                        </div>
+                    </li>
+                </ul>
+                <button onclick="show(+1)">
+                    <img src="./Assets/setadireita.png" alt="">
+                </button>
+            </div>
+
+            <button class="learnMore" onclick="showModal(index)">Saiba mais</button>
+        </div>
+    </section>
+    <div class="modal" id="modal"></div>
+</body>
+</html>
